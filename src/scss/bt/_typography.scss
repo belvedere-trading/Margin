@@ -1,0 +1,53 @@
+a:hover, a:active {
+  text-decoration: none;
+}
+
+@mixin eyebrow {
+  font-weight: 600;
+  font-size: $font-size-small;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body {
+  font-weight: 300;
+}
+
+h1 {
+  color: $brand-primary;
+  font-weight: 300;
+}
+
+h2, h3, h4, h5, h6 {
+  color: $brand-secondary;
+  font-weight: bold;
+}
+
+.eyebrow {
+  @include eyebrow;
+}
+
+.roboto {
+  font-family: $font-family-sans-serif;
+}
+
+.font-weight-base {
+  font-weight: 300;
+}
+
+.font-weight-med {
+  font-weight: 400;
+}
+
+.font-weight-heavy {
+  font-weight: 600;
+}
+
+.white-space-no-wrap {
+  white-space: nowrap;
+}
+
+.rule {
+  border-top: 1px solid $gray-light;
+}

@@ -1,0 +1,12 @@
+thead {
+    font-size: $font-size-base;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $gray-light;
+    color: $gray-dark;
+    border: 1px solid $gray-light;
+}
+
+table {
+    color: $gray-dark;
+}

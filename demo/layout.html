@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../margin/images/favicon.ico">
+
+    <title>Margin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/margin.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+    <div class="page-sidebar-fixed">
+
+      <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Margin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../dist/css/margin.css" download>Download</a></li>
+            <li><a href="index.html">Styles</a></li>
+            <li class="active"><a href="#">Layout</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidebar">
+        <ul class="nav">
+          <li class="has-sub clickable active">
+            <a href="#">
+                <span>Sidebar Title</span>
+            </a>
+            <ul class="sub-menu">
+              <li class="active">
+                  <a class="clickable">
+                    Active side menu item title
+                  </a>
+              </li>
+              <li>
+                  <a class="clickable">
+                    Side menu item title
+                  </a>
+              </li>
+              <li>
+                  <a class="clickable">
+                    Side menu item title
+                  </a>
+              </li>
+              <li>
+                  <a class="clickable">
+                    Side menu item title
+                  </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <main class="content flex flex-column">
+        <ol class="breadcrumb">
+          <li><a class="text-white">Breadcrumb</a></li>
+        </ol>
+        <div class="flex-grow p-base overflow">
+          <h1>Sidebar layout example</h1>
+          <pre>
+            <code class="language-html" data-lang="html">
+               &lt;div class="page-sidebar-fixed"&gt;
+
+                &lt;nav class="navbar navbar-default navbar-fixed-top "&gt;
+                  ...
+                &lt;/nav&gt;
+
+                &lt;div class="sidebar"&gt;
+                  &lt;ul class="nav"&gt;
+                    &lt;li class="has-sub clickable active"&gt;
+                      &lt;a href="#"&gt;
+                          &lt;span&gt;Sidebar Title&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;ul class="sub-menu"&gt;
+                        &lt;li class="active"&gt;
+                            &lt;a class="clickable"&gt;
+                              Active side menu item title
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a class="clickable"&gt;
+                              Side menu item title
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a class="clickable"&gt;
+                              Side menu item title
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a class="clickable"&gt;
+                              Side menu item title
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+
+                &lt;main class="content flex flex-column"&gt;
+                  &lt;ol class="breadcrumb"&gt;
+                    &lt;li&gt;&lt;a&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ol&gt;
+                  &lt;div class="flex-grow p-base overflow"&gt;
+                    &lt;h1&gt;Sidebar layout example&lt;/h1&gt;
+                    ...
+                  &lt;/div&gt;
+                &lt;/main&gt;
+
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+      </main>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

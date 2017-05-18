@@ -1,0 +1,58 @@
+$colors: (
+  gray-base: $gray-base,
+  gray-darker: $gray-darker,
+  gray-dark: $gray-dark,
+  gray-light: $gray-light,
+  gray-lighter: $gray-lighter,
+  gray-lightest: #f4f9fc,
+  brand-primary: $brand-primary,
+  brand-secondary: $brand-secondary,
+  info: $brand-info,
+  success: $brand-success,
+  warning: $brand-warning,
+  danger: $brand-danger,
+  white: #fff
+);
+
+$text-color-light: brand-primary, brand-secondary, danger, info, gray-base, gray-darker, gray-dark;
+
+// background-color
+@each $key, $value in $colors {
+    @if contains($text-color-light, #{$key}) {
+      .bg-#{$key} {
+          background-color: #{$value};
+          color: #fff;
+      }
+    }
+    @else {
+      .bg-#{$key} {
+          background-color: #{$value};
+      }
+    }
+}
+
+// color
+@each $key, $value in $colors {
+    .#{$key} {
+        color: #{$value};
+    }
+}
+
+// border
+@each $key, $value in $colors {
+    .border-#{$key} {
+        border: 1px solid #{$value};
+    }
+}
+
+// shadow
+$shadow-dark: 0px 0px 5px 0px rgba(0,0,0,0.5);
+$shadow-light: 0px 0px 5px 0px rgba(0,0,0,0.25);
+
+.shadow-dark {
+  box-shadow: $shadow-dark;
+}
+
+.shadow-light {
+  box-shadow: $shadow-light;
+}

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../margin/images/favicon.ico">
+
+    <title>Margin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/margin.css" rel="stylesheet">
+    <link href="../styleguide/styleguide-specific.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+    <div class="page-sidebar-fixed">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Margin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../dist/css/margin.css" download>Download</a></li>
+            <li class="active"><a href="#">Styles</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </nav>
+
+      <div class="sidebar">
+        <ul class="nav">
+          <li class="has-sub clickable active">
+            <a href="#">
+                <span>Styles</span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a class="clickable" href="#typography">
+                  Typography
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#color">
+                  Color
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#margins">
+                  Margins
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#padding">
+                  Padding
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#navbars">
+                  Navbars
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#flex">
+                  Flex
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#non-flex-sizing">
+                  Non-Flex Sizing
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#panels">
+                  Panels
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#cards">
+                  Cards
+                </a>
+              </li>
+              <li>
+                <a class="clickable" href="#cards">
+                  Tables
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content p-base" style="overflow-x:hidden">
+        <div class="jumbotron p-y-0 bg-white">
+          <h1>Belvedere Trading UI Styleguide</h1>
+          <p>This template showcases Belvedere Trading's visual language and demonstrates how to use our additional UI styles and classes.</p>
+          <p>Our styles are a layer built on top of Bootstrap. For Bootstrap documentation, go <a href="https://v4-alpha.getbootstrap.com/getting-started/introduction/">here</a>. Our styles will automatically be applied on top when Bootstrap class names are used.</p>
+          <p><a href="../dist/css/margin.css" download>Download margin.css</a> | <a href="../dist/css/margin.min.css" download>Download margin.min.css</a></p>
+        </div>
+
+
+        <div class="clear page-header">
+          <h1><a id="typography">Typography</a></h1>
+        </div>
+
+        <h2 class="clear">Fonts</h2>
+        <p>Roboto is our primary typeface, chosen for its similarity to DIN, the typeface used on many highway signs. People process information more quickly when the typeface is familiar. Please use Roboto as much as possible.</p>
+        <p class="roboto">.roboto</p>
+
+        <h2 class="clear page-section">Font Weights</h2>
+        <p class="font-weight-base">.font-weight-base</p>
+        <p class="font-weight-med">.font-weight-med</p>
+        <p class="font-weight-heavy">.font-weight-heavy</p>
+
+        <h2 class="clear page-section">Rules</h2>
+        <p>Declare primary typographic rules as a style on the section's parent div.</p>
+        <div class="rule">
+          .rule
+        </div>
+
+        <h2 class="clear page-section">Eyebrows</h2>
+        <p>Eyebrows are design elements used to denote sections where headers are not necessary.</p>
+        <p class="eyebrow">.eyebrow</p>
+
+
+        <div class="clear page-header">
+          <h1><a id="color">Color</a></h1>
+        </div>
+
+        <h2 class="clear">Background Colors</h2>
+        <p>These are the classes used to declare div background colors.</p>
+        <div class="m-y-base p-base bg-gray-base">
+          .bg-gray-base
+        </div>
+        <div class="m-y-base p-base bg-gray-darker">
+          .bg-gray-darker
+        </div>
+        <div class="m-y-base p-base bg-gray-dark">
+          .bg-gray-dark
+        </div>
+        <div class="m-y-base p-base bg-gray-light">
+          .bg-gray-light
+        </div>
+        <div class="m-y-base p-base bg-gray-lighter">
+          .bg-gray-lighter
+        </div>
+        <div class="m-y-base p-base bg-gray-lightest">
+          .bg-gray-lightest
+        </div>
+        <div class="m-y-base p-base bg-brand-primary">
+          .bg-brand-primary
+        </div>
+        <div class="m-y-base p-base bg-info">
+          .bg-info
+        </div>
+        <div class="m-y-base p-base bg-success">
+          .bg-success
+        </div>
+        <div class="m-y-base p-base bg-warning">
+          .bg-warning
+        </div>
+        <div class="m-y-base p-base bg-danger">
+          .bg-danger
+        </div>
+        <div class="m-y-base p-base border-gray-lighter bg-white">
+          .bg-white
+        </div>
+
+        <h2 class="clear page-section">Secondary and Accent Colors</h2>
+        <p>Please note, our styles include additional secondary and accent colors. Secondary and accent colors should be used sparingly outside of the pre-defined framework. Please be mindful of the secondary and accent colors when declaring color classes. Our accent color is meant to quickly draw the eye to important information.</p>
+        <div class="m-y-base p-base bg-brand-secondary">
+          .bg-brand-secondary
+        </div>
+        <div class="m-y-base p-base" style="background-color:#13FF79">
+          This is our accent color. There are no class names for our accent color, but it will appear on several elements.
+        </div>
+
+        <h2 class="clear page-section">Chart Colors</h2>
+        <div class="bg-gray-lightest flex flex-column flex-wrap">
+          <div class="flex flex-row flex-wrap">
+            <div class="chart-color-1 m-base p-base white flex-grow">
+              .chart-color-1
+            </div>
+            <div class="chart-color-2 m-base p-base white flex-grow">
+              .chart-color-2
+            </div>
+            <div class="chart-color-3 m-base p-base white flex-grow">
+              .chart-color-3
+            </div>
+            <div class="chart-color-4 m-base p-base white flex-grow">
+              .chart-color-4
+            </div>
+            <div class="chart-color-5 m-base p-base white flex-grow">
+              .chart-color-5
+            </div>
+            <div class="chart-color-6 m-base p-base white flex-grow">
+              .chart-color-6
+            </div>
+          </div>
+          <div class="flex flex-row flex-wrap">
+            <div class="chart-color-7 m-base p-base flex-grow">
+              .chart-color-7
+            </div>
+            <div class="chart-color-8 m-base p-base flex-grow">
+              .chart-color-8
+            </div>
+            <div class="chart-color-9 m-base p-base flex-grow">
+              .chart-color-9
+            </div>
+            <div class="chart-color-10 m-base p-base flex-grow">
+              .chart-color-10
+            </div>
+            <div class="chart-color-11 m-base p-base flex-grow">
+              .chart-color-11
+            </div>
+            <div class="chart-color-12 m-base p-base flex-grow">
+              .chart-color-12
+            </div>
+          </div>
+          <div class="flex flex-row flex-wrap">
+            <div class="chart-red-1 m-base p-base flex-grow">
+              .chart-red-1
+            </div>
+            <div class="chart-red-2 m-base p-base flex-grow">
+              .chart-red-2
+            </div>
+            <div class="chart-red-3 m-base p-base flex-grow">
+              .chart-red-3
+            </div>
+            <div class="chart-red-4 m-base p-base flex-grow">
+              .chart-red-4
+            </div>
+          </div>
+          <div class="flex flex-row flex-wrap">
+            <div class="chart-green-1 m-base p-base flex-grow">
+              .chart-green-1
+            </div>
+            <div class="chart-green-2 m-base p-base flex-grow">
+              .chart-green-2
+            </div>
+            <div class="chart-green-3 m-base p-base flex-grow">
+              .chart-green-3
+            </div>
+            <div class="chart-green-4 m-base p-base flex-grow">
+              .chart-green-4
+            </div>
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Text Colors</h2>
+        <p>These are the classes used to declare text colors.</p>
+        <div class="m-y-base border-gray-lighter p-base gray-base">
+          .gray-base
+        </div>
+        <div class="m-y-base border-gray-lighter p-base gray-darker">
+          .gray-darker
+        </div>
+        <div class="m-y-base border-gray-lighter p-base gray-dark">
+          .gray-dark
+        </div>
+        <div class="m-y-base bg-gray-darker p-base gray-light">
+          .gray-light
+        </div>
+        <div class="m-y-base bg-gray-darker p-base gray-lighter">
+          .gray-lighter
+        </div>
+        <div class="m-y-base border-gray-lighter p-base brand-primary">
+          .brand-primary
+        </div>
+        <div class="m-y-base bg-gray-darker p-base info">
+          .info
+        </div>
+        <div class="m-y-base bg-gray-darker p-base success">
+          .success
+        </div>
+        <div class="m-y-base bg-gray-darker p-base warning">
+          .warning
+        </div>
+        <div class="m-y-base border-gray-lighter p-base danger">
+          .danger
+        </div>
+        <div class="m-y-base bg-gray-darker p-base white">
+          .white
+        </div>
+
+        <h2 class="clear page-section">Borders</h2>
+        <p>These are the classes used to declare border colors.</p>
+        <div class="m-y-base border-gray-base p-base">
+          .border-gray-base
+        </div>
+        <div class="m-y-base border-gray-darker p-base">
+          .border-gray-darker
+        </div>
+        <div class="m-y-base border-gray-dark p-base">
+          .border-gray-dark
+        </div>
+        <div class="m-y-base border-gray-light p-base">
+          .border-gray-light
+        </div>
+        <div class="m-y-base border-gray-lighter p-base">
+          .border-gray-lighter
+        </div>
+        <div class="m-y-base border-brand-primary p-base">
+          .border-brand-primary
+        </div>
+        <div class="m-y-base border-info p-base">
+          .border-info
+        </div>
+        <div class="m-y-base border-success p-base">
+          .border-success
+        </div>
+        <div class="m-y-base border-warning p-base">
+          .border-warning
+        </div>
+        <div class="m-y-base border-danger p-base">
+          .border-danger
+        </div>
+        <div class="bg-gray-darker m-y-base p-3">
+          <div class="border-white p-base white">
+            .border-white
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Shadows</h2>
+        <p>These are the classes used to declare div shadows. Please use them sparingly, to highlight information.</p>
+        <div class="shadow-light m-y-base p-base">
+          .shadow-light
+        </div>
+        <div class="m-y-base p-base bg-gray-darker">
+          <div class="shadow-dark bg-gray-dark p-base">
+            .shadow-dark
+          </div>
+        </div>
+
+
+        <div class="clear page-header">
+          <h1><a id="margins">Margins</a></h1>
+          <p>These are the classes used to declare div margins. You may specify margins for the entire div, or margins for any side of a div. Class names are below.</p>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-0">.m-0</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-1">.m-1</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-2">.m-2</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-3">.m-3</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-xs">.m-xs</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-sm">.m-sm</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-base">.m-base</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-lg">.m-lg</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-xl">.m-xl</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-r-base">.m-r</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-l-base">.m-l</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-t-base">.m-t</div>
+          </div>
+        </div>
+
+        <div class="m-y-base flex">
+          <div class="flex-grow bg-gray-lighter">
+            <div class="bg-white border-gray-lighter m-b-base">.m-b</div>
+          </div>
+        </div>
+
+
+        <div class="clear page-header">
+          <h1><a id="padding">Padding</a></h1>
+          <p>These are the classes used to declare div margins. You may specify margins for the entire div, or margins for any side of a div. Class names are below.</p>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-0">
+          <div class="bg-gray-lighter">.p-0</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-1">
+          <div class="bg-gray-lighter">.p-1</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-2">
+          <div class="bg-gray-lighter">.p-2</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-3">
+          <div class="bg-gray-lighter">.p-3</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-xs">
+          <div class="bg-gray-lighter">.p-xs</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-sm">
+          <div class="bg-gray-lighter">.p-sm</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-base">
+          <div class="bg-gray-lighter">.p-base</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-lg">
+          <div class="bg-gray-lighter">.p-lg</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-xl">
+          <div class="bg-gray-lighter">.p-xl</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-r-base">
+          <div class="bg-gray-lighter">.p-r</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-l-base">
+          <div class="bg-gray-lighter">.p-l</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-t-base">
+          <div class="bg-gray-lighter">.p-t</div>
+        </div>
+
+        <div class="bg-white m-b-base border-gray-lighter p-b-base">
+          <div class="bg-gray-lighter">.p-b</div>
+        </div>
+
+
+        <div class="clear page-header">
+          <h1><a id="navbars">Navbars</a></h1>
+        </div>
+
+        <nav class="navbar navbar-default width-100">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-inverse width-100">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <div class="clear page-header">
+          <h1><a id="flex">Flex</a></h1>
+          <p>Additional classes can be used to declare more granular layout that isn't covered by the bootstrap responsive grid.</p>
+        </div>
+
+        <h2 class="clear">Flex Direction</h2>
+        <p>.flex .flex-row (default)</p>
+        <div class="flex flex-row bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+        </div>
+
+        <p>.flex .flex-column</p>
+        <div class="flex flex-column bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Inner div
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Flex Justification</h2>
+        <p>Note that these styles can also be applied vertically</p>
+        <p>.flex-justify-space-between</p>
+        <div class="flex flex-row flex-justify-space-between bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+        </div>
+
+        <p>.flex-justify-space-around</p>
+        <div class="flex flex-row flex-justify-space-around bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+        </div>
+
+        <p>.flex-justify-center</p>
+        <div class="flex flex-row flex-justify-center bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+        </div>
+
+        <p>.flex-justify-start</p>
+        <div class="flex flex-row flex-justify-start bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+        </div>
+
+        <p>.flex-justify-end</p>
+        <div class="flex flex-row flex-justify-end bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+          <div class="bg-white gray-dark m-base" style="width:200px">
+            Inner div
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Flex Wrap</h2>
+        <p><strong>IMPORTANT: When laying out divs that will contain large blocks of continuous text, <span class="brand-secondary">make column width as narrow as possible</span> up to <span class="brand-secondary">10-12 characters per line.</span> The narrower the text column, the faster the user will be able to read.</strong></p>
+        <p>Declaring flex-wrap on the parent container will wrap the child divs. flex-no-wrap will prevent wrapping. .overflow will declare .overflow-auto.</p>
+
+        <p>.flex .flex-row .flex-wrap</p>
+        <div class="flex flex-row flex-wrap bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+
+        <p>.flex .flex-row .flex-no-wrap</p>
+        <div class="flex flex-row flex-no-wrap overflow bg-gray-lighter p-base m-b-xl">
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div class="bg-white gray-dark m-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Flex Grow</h2>
+        <p>Applying flex-grow to the child div will stretch it to fill the height or width of the parent container, depending on which flex direction is specified. Note the difference between this class and the CSS usage of flex-grow.</p>
+        <div class="flex flex-column flex-no-wrap bg-gray-lighter p-base m-y-xl">
+          <div class="bg-white gray-dark m-base white-space-no-wrap" style="height:200px">
+            .flex-grow
+            <p>This div has a specified height.</p>
+          </div>
+        </div>
+
+
+        <div class="clear page-header">
+          <h1><a id="non-flex-sizing">Non-Flex Sizing</a></h1>
+        </div>
+
+        <h2 class="clear">Width and Height</h2>
+        <p>In instances where scaling the child div to the height of the parent div is necessary, Margin provides the .width-100 class and the .height-100 class.</p>
+
+        <div class="bg-gray-lighter p-base m-y-xl" style="width:200px">
+          <div class="bg-white gray-dark width-100">
+            .width-100
+            <p>The parent div has a specified width.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-lighter p-base m-y-xl" style="height:200px">
+          <div class="bg-white gray-dark height-100">
+            .height-100
+            <p>The parent div has a specified height.</p>
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Overflow</h2>
+        <div class="flex flex-column bg-gray-lighter p-base m-y-xl">
+          <div class="bg-white gray-dark m-base overflow" style="height:200px">
+            <p>.overflow</p>
+            <p>This div has a specified height.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue vitae arcu vestibulum volutpat congue eu mauris. Vestibulum vel mauris id libero convallis vestibulum quis ut ex. Aliquam ut magna pulvinar, interdum ligula ut, gravida lorem. Sed eu faucibus odio, placerat finibus augue. Fusce interdum leo enim, quis dignissim leo maximus non. Nam vel scelerisque quam. Suspendisse blandit mi mi, non viverra nisl tempus a. Phasellus condimentum bibendum ipsum vel placerat. In efficitur suscipit diam sed eleifend. Curabitur sed arcu sit amet leo lacinia faucibus. Aliquam et lectus tempus, dapibus erat ac, rutrum libero. Proin magna eros, tempus eu nunc in, condimentum aliquam dui. Integer ac dignissim quam. Phasellus tristique quam sit amet tellus ultricies, sed fermentum metus suscipit. Aenean venenatis sagittis elementum. Nam erat nisl, elementum iaculis condimentum quis, dictum non ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue vitae arcu vestibulum volutpat congue eu mauris. Vestibulum vel mauris id libero convallis vestibulum quis ut ex. Aliquam ut magna pulvinar, interdum ligula ut, gravida lorem. Sed eu faucibus odio, placerat finibus augue. Fusce interdum leo enim, quis dignissim leo maximus non. Nam vel scelerisque quam. Suspendisse blandit mi mi, non viverra nisl tempus a. Phasellus condimentum bibendum ipsum vel placerat. In efficitur suscipit diam sed eleifend. Curabitur sed arcu sit amet leo lacinia faucibus. Aliquam et lectus tempus, dapibus erat ac, rutrum libero. Proin magna eros, tempus eu nunc in, condimentum aliquam dui. Integer ac dignissim quam. Phasellus tristique quam sit amet tellus ultricies, sed fermentum metus suscipit. Aenean venenatis sagittis elementum. Nam erat nisl, elementum iaculis condimentum quis, dictum non ipsum.</p>
+          </div>
+        </div>
+
+        <h2 class="clear page-section">Clear</h2>
+        <p>Note that .clear will clear div positioning for all subsequent divs.</p>
+
+
+        <div class="clear page-header">
+          <h1><a id="panels">Panels</a></h1>
+          <p>Panels can be used in two ways, default and with custom colors. Class names are specified in panel titles.</p>
+        </div>
+
+        <h2 class="clear">Default</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-default</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-primary</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-success</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-info</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-warning</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">panel-danger</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div><!-- /.col-sm-4 -->
+        </div>
+
+        <h2 class="clear page-section">Custom</h2>
+        <p>Below is an example of how to customize panel colors. Panels may also have clickable headers.</p>
+
+        <div class="panel border-brand-primary">
+          <div class="panel-heading panel-header-clickable bg-brand-primary">
+            <h3 class="panel-title white">bg-brand-primary white</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+
+        <h3 class="page-section">Example</h3>
+        <pre>
+          <code class="language-html" data-lang="html">
+            &lt;div class="panel border-brand-primary"&gt;
+              &lt;div class="panel-heading panel-header-clickable bg-brand-primary"&gt;
+                &lt;h3 class="panel-title white"&gt;bg-brand-primary white&lt;/h3&gt;
+              &lt;/div&gt;
+              &lt;div class="panel-body"&gt;
+                Panel content
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+
+        <div class="clear page-header">
+          <h1><a id="cards">Cards</a></h1>
+          <p>Use the card class in the context of the bootstrap grid system.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3 col-sm-6 col-m-t-xl">
+            <div class="card p-base shadow-light m-b-xl">
+              <h3>.card</h3>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-6 col-m-t-xl">
+            <div class="card p-base shadow-light m-b-xl">
+              <h3>.card</h3>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-6 col-m-t-xl">
+            <div class="card p-base shadow-light m-b-xl">
+              <h3>.card</h3>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-6 col-m-t-xl">
+            <div class="card p-base shadow-light m-b-xl">
+              <h3>.card</h3>
+            </div>
+          </div>
+        </div>
+
+        <h3>Example</h3>
+        <pre>
+          <code class="language-html" data-lang="html">
+            &lt;div class="row"&gt;
+              &lt;div class="col-xs-3 col-sm-6 col-m-t-xl"&gt;
+                &lt;div class="card p-base shadow-light m-b-xl"&gt;
+                  &lt;h3&gt;.card&lt;/h3&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="col-xs-3 col-sm-6 col-m-t-xl"&gt;
+                &lt;div class="card p-base shadow-light m-b-xl"&gt;
+                  &lt;h3&gt;.card&lt;/h3&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="col-xs-3 col-sm-6 col-m-t-xl"&gt;
+                &lt;div class="card p-base shadow-light m-b-xl"&gt;
+                  &lt;h3&gt;.card&lt;/h3&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="col-xs-3 col-sm-6 col-m-t-xl"&gt;
+                &lt;div class="card p-base shadow-light m-b-xl"&gt;
+                  &lt;h3&gt;.card&lt;/h3&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="clear page-header">
+          <h1><a id="tables">Tables</a></h1>
+        </div>
+
+        <h2 class="clear">Default</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+node_modules
+dist
+
+# OS files
+# Mac OS X
+.DS_Store
+/Icon*
+._*
+#OS junk files
+[Tt]humbs.db
+*.DS_Store

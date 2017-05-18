@@ -1,0 +1,62 @@
+/*
+ * Override the variables you want to customize, all variables can refer to:
+ *
+ * node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ *
+ */
+
+$gray-base:               #131920 !default;
+$gray-light:              lighten($gray-base, 70%) !default;
+$gray-lighter:            lighten($gray-base, 85%) !default;
+
+$brand-primary:           #004E85 !default; //rgb(0, 77, 126); //darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:           #41E086 !default;
+$brand-info:              #75add4 !default;
+$brand-warning:           #E2D83F !default;
+$brand-danger:            #D36352 !default;
+
+$brand-primary:           #00558E !default; //rgb(0, 85, 142); //darken(#428bca, 6.5%) !default; // #337ab7
+
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
+
+$link-color:                  darken($brand-secondary, 15%) !default;
+$link-hover-color:            darken($brand-secondary, 15%) !default;
+
+$font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif !default;
+
+$border-radius-base:      0px !default;
+$border-radius-large:     0px !default;
+$border-radius-small:     0px !default;
+
+$panel-default-border:        $gray-light !default;
+$panel-default-heading-bg:    $gray-light !default;
+
+$panel-primary-border:        $brand-secondary;
+$panel-primary-heading-bg:    $brand-secondary;
+
+$state-success-bg:               #B5FFD5 !default;
+$state-success-text:             #123E25 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #20303A !default;
+$state-info-bg:                  #C0D9EB !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #F8F29F !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #EFC6C0 !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+$navbar-default-bg:              #fff !default;
+$navbar-inverse-bg:              $brand-primary !default;
+
+$table-bg-accent:               $gray-lighter !default;
+$table-bg-hover:                $gray-lighter !default;
+$table-bg-active:               $table-bg-hover !default;
+$table-border-color:            $gray-light !default;
+

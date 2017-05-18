@@ -1,0 +1,27 @@
+$chart-colors:  #2c6994, #75acd5, #8cebe7, #48b6e0, #4b9699, #dbd242, #438cbf, #96c7eb, #baf3f1, #8fd7f2, #82b8ba, #e9e48e;
+$chart-greens: #13ff79, #42ff94, #71ffaf, #a1ffc9;
+$chart-reds: #d45d6e, #e695a1, #f3c5cb, #f7e1e4;
+
+// chart-color
+@each $chart-color in $chart-colors {
+    $i: index($chart-colors, $chart-color);
+    .chart-color-#{$i} {
+        background-color: $chart-color;
+    }
+}
+
+// chart-green
+@each $chart-green in $chart-greens {
+    $i: index($chart-greens, $chart-green);
+    .chart-green-#{$i} {
+        background-color: $chart-green;
+    }
+}
+
+// chart-red
+@each $chart-red in $chart-reds {
+    $i: index($chart-reds, $chart-red);
+    .chart-red-#{$i} {
+        background-color: $chart-red;
+    }
+}

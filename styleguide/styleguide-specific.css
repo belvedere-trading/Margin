@@ -1,0 +1,10 @@
+/* This file is specific to the styleguide only. Do not import it into other projects */
+
+.page-header {
+    margin-top: 8rem;
+    margin-bottom: 14px;
+}
+
+.page-section {
+    margin-top: 6rem;
+}

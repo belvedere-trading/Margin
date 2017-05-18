@@ -1,0 +1,50 @@
+$sides: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left
+);
+
+$spacing: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  xs: calc(#{$font-size-base} / 2),
+  sm: $font-size-small,
+  base: $font-size-base,
+  lg: $font-size-large,
+  xl: calc(#{$font-size-large} * 2)
+);
+
+// m
+@each $key, $value in $spacing {
+  .m-#{$key} {
+      margin: #{$value};
+  }
+}
+
+// m-x
+@each $key, $value in $spacing {
+  .m-x-#{$key} {
+      margin-right: #{$value};
+      margin-left: #{$value};
+  }
+}
+
+// m-y
+@each $key, $value in $spacing {
+  .m-y-#{$key} {
+      margin-top: #{$value};
+      margin-bottom: #{$value};
+  }
+}
+
+// side margins
+@each $sideskey, $sidesvalue in $sides {
+  @each $spacingkey, $spacingvalue in $spacing {
+    .m-#{$sideskey}-#{$spacingkey} {
+      margin-#{$sidesvalue}: #{$spacingvalue};
+    }
+  }
+}

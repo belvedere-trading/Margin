@@ -1,0 +1,31 @@
+.panel-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-row {
+  flex-direction: row;
+}
+
+.panel-stretch-container {
+  display: flex;
+}
+
+.panel-stretch {
+  flex-grow: 1;
+}
+
+.panel-heading {
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+
+.panel-header-clickable {
+  cursor: pointer;
+}
+
+.panel-title {
+  @include eyebrow;
+  padding: calc(#{$font-size-small} / 2) $font-size-base;
+}

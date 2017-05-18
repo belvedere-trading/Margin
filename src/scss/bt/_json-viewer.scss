@@ -1,0 +1,19 @@
+.json-viewer {
+  display: flex;
+  flex-direction: column;
+  .leaf {
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    margin: $font-size-small 0 0 0;
+  }
+  .branch {
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: $font-size-base;
+    border-left: 1px solid $gray-lighter;
+  }
+  .wrap {
+    word-break: break-word;
+  }
+}

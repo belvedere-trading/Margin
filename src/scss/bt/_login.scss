@@ -1,0 +1,122 @@
+@mixin background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;  
+}
+
+#page-container {
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+}
+
+#background-image {
+  @include background;
+  z-index: 0;
+  background-size: cover;
+  -webkit-animation: fadeIn 10s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn 10s; /* Firefox < 16 */
+  -ms-animation: fadeIn 10s; /* Internet Explorer */
+  -o-animation: fadeIn 10s; /* Opera < 12.1 */
+  animation: fadeIn 10s;
+}
+
+
+#background-fill {
+  @include background;
+  z-index: 1;
+  opacity: 0.4;
+  background: -moz-linear-gradient(top, #d6edfc 0%, #75add4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d6edfc 0%, #75add4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d6edfc 0%, #75add4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-animation: fadeOut 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeOut 6s; /* Firefox < 16 */
+  -ms-animation: fadeOut 6s; /* Internet Explorer */
+  -o-animation: fadeOut 6s; /* Opera < 12.1 */
+  animation: fadeOut 6s;
+}
+
+.login-container {
+  align-self: center;
+  opacity: 0.95;
+}
+
+.logo {
+  align-self: center;
+  height: 32px;
+  width: 32px;
+}
+
+.logotype {
+  font-size: 34px;
+  font-weight: 300;
+  text-align: center;
+}
+
+input[type="text"] {
+  background-color: #fff;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+@keyframes fadeOut {
+  from { opacity: 0.75; }
+  to   { opacity: 0.4; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeOut {
+  from { opacity: 0.75; }
+  to   { opacity: 0.4; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeOut {
+  from { opacity: 0.75; }
+  to   { opacity: 0.4; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeOut {
+  from { opacity: 0.75; }
+  to   { opacity: 0.4; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeOut {
+  from { opacity: 0.75; }
+  to   { opacity: 0.4; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
