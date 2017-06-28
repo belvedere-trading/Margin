@@ -17,7 +17,8 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "gulp-clean-css": "^3.2.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-zip": "^4.0.0"
   },
   "repository": {
     "type": "git",

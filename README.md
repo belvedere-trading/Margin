@@ -1,18 +1,16 @@
-#BTStrap
-## Project Setup
+# Margin
 
+Margin is a Bootstrap theme used by Belvedere Trading for our web applications.
+Demo: http://belvedere-trading.github.io/Margin/demo/index.html
 
+#### Project Setup
 ```
 $ npm install
-$ gulp build
+$ npm run build
 ```
 or, to rebuild each time a file changes (while developing)
 ```
-$ gulp watch
+$ npm run watch
 ```
 
-Files will compile to dist/css
-```
-
-
-
+Files will compile to the /dist folder

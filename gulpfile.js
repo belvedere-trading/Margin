@@ -3,12 +3,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
+const zip = require('gulp-zip');
 
 // source and distribution folder
 var paths = {
 
     // Location of overrides and custom styles
     source: 'src/',
+
+    // Location of static assets
+    assets: 'assets/',
 
     // Where the generated assets will go
     dest: 'dist/',
@@ -19,7 +23,7 @@ var paths = {
 };
 
 paths.fonts = {
-    in: [paths.source + 'fonts/*.*', paths.bootstrapSass_in + 'assets/fonts/**/*'],
+    in: paths.assets + 'fonts/**',
     out: paths.dest + 'fonts/'
 };
 
@@ -35,15 +39,19 @@ paths.css = {
     }
 };
 
-
 gulp.task('fonts', function () {
     return gulp
         .src(paths.fonts.in)
         .pipe(gulp.dest(paths.fonts.out));
 });
 
+gulp.task('zip', function(){
+    gulp.src('dist/**')
+        .pipe(zip('margin.zip'))
+        .pipe(gulp.dest('dist'))
+});
 
-gulp.task('build', ['fonts'], function () {
+gulp.task('build', ['fonts', 'zip'], function () {
     return gulp.src(paths.css.in)
         //output non-minified css file
         .pipe(sass(paths.css.sassOpts))
